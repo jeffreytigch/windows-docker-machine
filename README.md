@@ -64,7 +64,7 @@ First you need a Windows Server VM for your hypervisor. I prefer
 Step 1 (building the headless Vagrant box) can be done with these steps:
 
 ```bash
-$ git clone https://github.com/StefanScherer/packer-windows
+$ git clone  --recurse-submodules https://github.com/StefanScherer/packer-windows
 $ cd packer-windows
 
 $ packer build --only=vmware-iso windows_2022_docker.json
